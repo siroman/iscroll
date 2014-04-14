@@ -1,4 +1,3 @@
-
 function IScroll (el, options) {
 	this.wrapper = typeof el == 'string' ? document.querySelector(el) : el;
 	this.scroller = this.wrapper.children[0];
@@ -12,7 +11,7 @@ function IScroll (el, options) {
 		startY: 0,
 		scrollY: true,
 		directionLockThreshold: 5,
-		momentum: true,
+		momentum: false,
 
 		bounce: true,
 		bounceTime: 600,
